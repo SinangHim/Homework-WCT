@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number to string Converter</title>
+</head>
+<style>
+.root {
+    padding-top: 4rem;
+}
+ .container{
+                width: 490px;
+                height: 150px;
+                background-color: rgb(235, 157, 84);
+                border-radius: 0px;
+                text-align: center;
+                padding: 20px;
+            }
+    h2{ 
+        color: #FFFFFF;
+        margin-top: 10px;        
+    }
+    .text {
+            width: 50%;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+    .submit{
+           
+            margin-top: 10px;
+            border-radius: 0px;
+            padding: 15px;
+            background-color: #FFFFFF;
+}   
+
+</style>
+<p>
+</p>
+<body>
+  <center class="root">
+    <div class="container">
+            <h2>Number to string Converter</h2>
+        <input type="text" placeholder="Enter number" class="text" id="Input"><br>
+        <button onclick="convert()">Convert</button>
+    </div>
+    </center>
+    <script>
+             function convert () {
+                const text= document.getElementById('Input').value;
+                var word = "";
+                for (var num of text) {
+                    var x = parseInt(num);
+                    switch (x) {
+                        case 0:
+                        word  += "zero";
+                            break;
+                        case 1:
+                        word  += "one";
+                            break;
+                        case 2:
+                        word  += "two";
+                            break;
+                        case 3:
+                        word  += "three";
+                            break;
+                        case 4:
+                        word  += "four";
+                            break;
+                        case 5:
+                        word  += "five";
+                            break;
+                        case 6:
+                        word  += "six";
+                            break;
+                        case 7:
+                        word  += "seven";
+                            break;
+                        case 8:
+                        word  += "eight";
+                            break;
+                        case 9:
+                        word  += "nine";
+                            break;
+                    }
+                }
+                innerHTML = alert(`output: ${word}`);
+            }
+        </script>
+</body>
+</html>

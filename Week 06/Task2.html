@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palindrome Number</title>
+</head>
+<style>
+.root {
+    padding-top: 4rem;
+}
+ .container{
+                width: 35rem;
+                height: 10rem;
+                background-color: rgb(235, 157, 84);
+                border-radius: 0px;
+                text-align: center;
+                padding: 20px;
+            }
+    h2{ 
+        color: #FFFFFF;
+        margin-top: 10px;        
+    }
+    .text {
+            width: 50%;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+    .submit{
+           
+            margin-top: 10px;
+            border-radius: 0px;
+            padding: 15px;
+            background-color: #FFFFFF;
+}   
+
+</style>
+<p>
+</p>
+<body>
+  <center class="root">
+    <div class="container">
+            <h2>Palindrome Number</h2>
+        <input type="text" placeholder="Enter number" class="text" id="Input"><br>
+        <button onclick="Palindrome()">Enter</button>
+    </div>
+    </center>
+    <script>
+ function Palindrome()
+	{
+		var r, temp, final = 0;
+		var number = Number(document.getElementById("Input").value);
+
+		temp = number;
+		while(number>0)
+		{
+			r = number%10;
+			number = parseInt(number/10);
+			final = final*10+r;
+		}
+		if(final==temp)
+		{
+			alert("Number is a palindrome number");
+		}
+		else
+		{
+			alert("Number is not a palindrome number");
+		}
+	}
+        </script>
+</body>
+</html>

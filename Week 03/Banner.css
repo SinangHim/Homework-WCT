@@ -1,0 +1,28 @@
+.Banner>img {
+    height: 600px;
+    width: 1000px;
+}
+
+h1 {
+    position: absolute;
+    color: red;
+    top: 200px;
+    left: 500px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    top: 300px;
+    left: 500px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+h4 {
+    padding: 0px 300px;
+    font-family: monospace;
+}

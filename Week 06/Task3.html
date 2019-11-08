@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sort Array</title>
+</head>
+<style>
+    .root {
+    padding-top: 4rem;
+    }
+    .container{
+    width: 17rem;
+    height: 5rem;
+    background-color: rgb(235, 157, 84);
+    border-radius: 0px;
+    text-align: center;
+    padding: 20px;
+    }
+</style>
+<body>
+    <center class="root">
+        <dir class="container">
+            <button onclick="SortingArray()">Sorting an Array</button>
+            <p id="output" style="color: #fff;"></p>
+        </dir>
+        
+    </center>
+     <script>
+
+        var Arr1 = [-10, 10, 7, 6, 1, -4, 3, 2, -1 ];
+        document.getElementById("output").innerHTML = Arr1;  
+        function SortingArray() {
+        Arr1.sort(function(a, b)
+        {return a - b});
+  document.getElementById("output").innerHTML = Arr1;
+}
+        </script>
+</body>
+</html>
